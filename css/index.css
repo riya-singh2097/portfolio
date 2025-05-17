@@ -1,0 +1,158 @@
+@font-face {
+    font-family:cyberpunk ;
+    src: url("../fonts/AlphaCyberpunkDemo-Regular.otf");
+}
+@font-face {
+    font-family:retrogame ;
+    src: url("../fonts/GroutpixFTorch-zrlKL.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* FONTS */
+@font-face {/* name  */
+    font-family:fussion ;
+    src: url("../fonts/Fussion-3zgAz.ttf");
+}
+
+@font-face {/* a */
+    font-family:spacegames ;
+    src: url("../fonts/SpaceGames-K7zKD.otf");
+}
+
+ @keyframes blink {
+     0% {
+         opacity: 0;
+     }
+
+     50% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+#hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg,#1c3d61, #58757a );
+}
+
+.hero-sauser{
+    background-image: url("../images/flyingsauser.png");
+    background-size: cover;
+    position: absolute;
+    top: 1.5rem;
+    margin-left: 5rem;
+    height: 28rem;
+    width: 31rem;
+    transform: rotate(25deg) ;
+    z-index: 0;
+    filter: drop-shadow(0 4px 10px #F5DBB6ff);
+}
+
+.hero-sauser img{
+    position: absolute;
+    top:18rem;
+    left: 300px;
+    height: 2rem;
+}
+.hero-text{
+    position: absolute;
+    /* float: right; */
+    top: 10rem;
+    right: 100px;
+  
+}
+.name{
+    font-family: fussion,"Pixelify Sans", sans-serif;
+    font-size: 3rem;
+    color: #f2e4cb;
+    filter: drop-shadow(10px 4px 2px #B24D40ff);
+}
+.hero-text  .about{
+    font-family:  monospace;
+    color: #dbe8ea;
+    font-weight: 400;
+}
+.hero-text  .about > #what{
+    color: rgb(227, 129, 116);
+    text-shadow: 0px 0px 1px rgb(227, 129, 116);
+}
+ .cursor {
+     animation: blink 1s step-end infinite;
+ }
+
+#hero > .nav{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height:21vh ;
+    width: 100vw;
+    background-image: linear-gradient(180deg, #f2e4cb,#aec5dd );
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   border-bottom: 0.05rem dotted #f2e4cb9f ;
+}
+
+#hero > .nav a{
+    text-decoration: none;
+    font-family: spacegames,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1c3d61;
+    text-shadow: 0px 0px 2px #1c3d61;
+}
+#hero > .nav a:hover{
+    text-shadow: 0px 0px 10px #f2e4cb;
+}
+
+/* skills */
+#skills{
+  position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background-image: linear-gradient(180deg, #aec5dd, #f2e4cb ); */
+    background-image: linear-gradient(180deg, #f2e4cb, #f2e4cb );
+}
+
+#about-me{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg,#1c3d61, #58757a );
+}
+
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background-color: #58757a;
+    position: relative;
+   
+}
+section{
+     border: none;
+}
+.ufo{
+    position: absolute;
+    opacity: 0.5;
+    background-image: url("../images/ufo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 400px;
+    width: 700px; 
+    transform: rotate(20deg);
+    right: -5rem;
+    top: -10rem;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
